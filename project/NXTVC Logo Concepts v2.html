@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NXTVC — Logo Concepts v2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Bungee&family=Space+Mono:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; background: #f0ede6; }
+  * { box-sizing: border-box; }
+
+  /* arcade scanlines */
+  .scanlines::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,0.16) 0px, rgba(0,0,0,0.16) 1px, transparent 2px, transparent 4px);
+    mix-blend-mode: overlay;
+  }
+
+  /* light pixel grid for daylight arcade */
+  .pixgrid {
+    background-image:
+      linear-gradient(rgba(58,35,80,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(58,35,80,0.05) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  /* candy chrome wordmark (warm iridescent) */
+  .candychrome {
+    background: linear-gradient(180deg, #ffffff 0%, #ffd9ec 30%, #c9a8ff 52%, #ffe7cf 68%, #ff9ecb 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 1px 0 rgba(255,255,255,0.55)) drop-shadow(0 0 18px rgba(255,92,168,0.4));
+  }
+
+  /* synth dot grid (pink) */
+  .dotgrid-synth {
+    background-image: radial-gradient(rgba(255,92,168,0.18) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  /* terminal cursor */
+  .blink { animation: blink 1.1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="brand-cards-v2.jsx"></script>
+<script type="text/babel">
+  const CARDS = [
+    { id: "arcade-night", label: "01 · Arcade · Night", C: CardArcadeNight },
+    { id: "arcade-day", label: "02 · Arcade · Daylight", C: CardArcadeDay },
+    { id: "chrome-arcade", label: "03 · Chrome Arcade", C: CardChromeArcade },
+    { id: "terminal-synth", label: "04 · Terminal · Synth", C: CardTerminalSynth },
+  ];
+
+  function App() {
+    return (
+      <DesignCanvas>
+        <DCSection id="logos-v2" title="NXTVC — Logo Concepts · Round 2" subtitle="Warmer, younger, multiplayer. Two arcade colorways, an arcade×Y2K merge, and a synth terminal.">
+          {CARDS.map(({ id, label, C }) => (
+            <DCArtboard key={id} id={id} label={label} width={760} height={840}>
+              <C />
+            </DCArtboard>
+          ))}
+        </DCSection>
+      </DesignCanvas>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>

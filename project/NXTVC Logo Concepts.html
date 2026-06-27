@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NXTVC — Logo Concepts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@500;600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&family=Anton&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; background: #f0ede6; }
+  * { box-sizing: border-box; }
+
+  /* arcade scanlines */
+  .scanlines::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,0.18) 0px, rgba(0,0,0,0.18) 1px, transparent 2px, transparent 4px);
+    mix-blend-mode: overlay;
+  }
+
+  /* y2k chrome text */
+  .chrome {
+    background: linear-gradient(180deg, #ffffff 0%, #cdd7ea 38%, #7e8aa3 52%, #e9f0ff 66%, #aab6cc 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 1px 0 rgba(255,255,255,0.5)) drop-shadow(0 0 18px rgba(95,240,255,0.35));
+  }
+
+  /* terminal dot grid */
+  .dotgrid {
+    background-image: radial-gradient(rgba(0,0,0,0.08) 1px, transparent 1px);
+    background-size: 18px 18px;
+  }
+
+  /* terminal cursor */
+  .blink { animation: blink 1.1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="brand-cards.jsx"></script>
+<script type="text/babel">
+  const { useEffect } = React;
+  const CARDS = [
+    { id: "arcade", label: "01 · Arcade", C: CardArcade },
+    { id: "chrome", label: "02 · Y2K Chrome", C: CardChrome },
+    { id: "club", label: "03 · Members Club", C: CardClub },
+    { id: "terminal", label: "04 · Terminal", C: CardTerminal },
+    { id: "varsity", label: "05 · Varsity", C: CardVarsity },
+  ];
+
+  function App() {
+    return (
+      <DesignCanvas>
+        <DCSection id="logos" title="NXTVC — Logo Concepts" subtitle="Five identity directions, retro → preppy. Pick one and we'll build it out.">
+          {CARDS.map(({ id, label, C }) => (
+            <DCArtboard key={id} id={id} label={label} width={760} height={1040}>
+              <C />
+            </DCArtboard>
+          ))}
+        </DCSection>
+      </DesignCanvas>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>

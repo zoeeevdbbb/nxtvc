@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NXTVC — Logo Banner (capture)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #ffffff; }
+  .pad { padding: 48px; display: inline-flex; }
+  .banner {
+    position: relative; width: 600px; border-radius: 18px; overflow: hidden;
+    background: radial-gradient(120% 150% at 50% 0%, #4a2e66 0%, #3A2350 70%);
+    padding: 46px 52px; display: flex; flex-direction: column; align-items: center; gap: 18px;
+  }
+  .banner::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,0.13) 0 1px, transparent 1px 4px);
+    mix-blend-mode: overlay;
+  }
+  .eyebrow { font-family: 'Press Start 2P', monospace; font-size: 13px; letter-spacing: 0.14em; color: #FF9F45; z-index: 1; }
+  .wm {
+    font-family: 'Press Start 2P', monospace; font-size: 52px; color: #FBEEDD; letter-spacing: 0.05em;
+    text-shadow: 4px 4px 0 #FF6B6B, 8px 8px 0 #9B6BFF; z-index: 1; line-height: 1; padding-left: 0.05em;
+  }
+  .tag { font-family: 'Press Start 2P', monospace; font-size: 14px; letter-spacing: 0.12em; color: #9B6BFF; z-index: 1; white-space: nowrap; }
+</style>
+</head>
+<body>
+  <div class="pad">
+    <div class="banner">
+      <span class="eyebrow">◆ MULTIPLAYER ◆</span>
+      <span class="wm">NXTVC</span>
+      <span class="tag">PRESS START TO JOIN</span>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var el = document.querySelector('.wm');
+      var t = el.textContent.trim();
+      el.innerHTML = t.split('').map(function (ch, i) {
+        var ml = i === 2 ? '-0.12em' : i === 3 ? '-0.01em' : i === 4 ? '-0.02em' : '0';
+        return '<span style="margin-left:' + ml + '">' + ch + '</span>';
+      }).join('');
+    })();
+  </script>
+</body>
+</html>
