@@ -1,5 +1,8 @@
 import ClientScripts from '@/components/ClientScripts'
 
+const JOIN_URL =
+  'https://docs.google.com/forms/d/e/1FAIpQLSdcJNU92pUVHxOXU2z2rgChJAPHHDWHtZ4NY-GOGDwWiCypAg/viewform?usp=sharing&ouid=110617859784928127398'
+
 export default function Home() {
   return (
     <>
@@ -15,7 +18,7 @@ export default function Home() {
             <a href="#chapters">Chapters</a>
           </div>
           <div className="nav-cta">
-            <a className="btn btn--primary" href="#join">
+            <a className="btn btn--primary" href={JOIN_URL} target="_blank" rel="noopener noreferrer">
               <span className="ic">▶</span>Request to join
             </a>
           </div>
@@ -34,7 +37,7 @@ export default function Home() {
               <a className="btn btn--primary" href="#what">
                 <span className="ic">●</span>Learn more
               </a>
-              <a className="btn btn--ghost btn--on-plum" href="#join">
+              <a className="btn btn--ghost btn--on-plum" href={JOIN_URL} target="_blank" rel="noopener noreferrer">
                 Request to join
               </a>
             </div>
@@ -359,7 +362,7 @@ export default function Home() {
         <div className="cta-inner">
           <div className="cta-wm wm wm--light wm--shadow-coral">NXTVC</div>
           <div className="hero-cta" style={{ justifyContent: 'center' }}>
-            <a className="btn btn--primary" href="#join">
+            <a className="btn btn--primary" href={JOIN_URL} target="_blank" rel="noopener noreferrer">
               <span className="ic blink">▶</span>Request to join
             </a>
             <a className="btn btn--ghost btn--on-plum" href="#what">
@@ -393,7 +396,7 @@ export default function Home() {
                   <a href="#chapters">Chapters</a>
                 </li>
                 <li>
-                  <a href="#join">Request to join</a>
+                  <a href={JOIN_URL} target="_blank" rel="noopener noreferrer">Request to join</a>
                 </li>
               </ul>
             </div>
