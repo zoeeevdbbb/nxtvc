@@ -35,7 +35,7 @@ export default function Home() {
             <h1 className="hero-headline">For the next generation of Venture Capital</h1>
             <div className="hero-cta">
               <a className="btn btn--primary" href="#what">
-                <span className="ic">●</span>Learn more
+                Learn more
               </a>
               <a className="btn btn--ghost btn--on-plum" href={JOIN_URL} target="_blank" rel="noopener noreferrer">
                 Request to join
