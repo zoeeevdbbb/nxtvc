@@ -13,8 +13,8 @@ export default function Home() {
             <span className="wm wm--shadow-coral">NXTVC</span>
           </a>
           <div className="nav-links">
-            <a href="#what">What it is</a>
-            <a href="#who">Who it&apos;s for</a>
+            <a href="#what">Introduction</a>
+            <a href="#who">Member Overview</a>
             <a href="#chapters">Chapters</a>
           </div>
           <div className="nav-cta">

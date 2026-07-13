@@ -178,7 +178,19 @@ h2.sec-title {
 }
 .nav-links a:hover::after { width: 100%; }
 .nav-cta { display: flex; align-items: center; gap: 14px; }
-.nav-cta .btn { padding: 10px 18px; font-size: 14px; }
+.nav-cta .btn { padding: 10px 18px; font-size: 14px; margin-top: -3px; }
+.nav-cta .btn--primary .ic {
+  position: relative;
+  top: -2px;
+  animation: nav-ic-bounce 1s ease-in-out infinite;
+}
+@keyframes nav-ic-bounce {
+  0%, 100% { transform: translateX(0); opacity: 1; }
+  50% { transform: translateX(4px); opacity: 0.3; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav-cta .btn--primary .ic { animation: none; }
+}
 
 /* ── hero ── */
 .hero {
