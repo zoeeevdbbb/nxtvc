@@ -222,9 +222,25 @@ export default function Home() {
                 LIVE
               </span>
               <span className="lead">
-                Meet your lead ·{' '}
+                Meet your leads ·{' '}
                 <a
-                  href="https://www.linkedin.com/in/tyler-fohrman/"
+                  href="https://www.linkedin.com/in/sarah-a-lamont?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Sarah
+                </a>
+                ,{' '}
+                <a
+                  href="https://www.linkedin.com/in/jack-a-canavan?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Jack
+                </a>
+                , and{' '}
+                <a
+                  href="https://www.linkedin.com/in/tyler-fohrman?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
