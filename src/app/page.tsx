@@ -293,11 +293,21 @@ export default function Home() {
                 SOON
               </span>
             </div>
-            <div className="chip is-soon reveal">
+            <div className="chip is-live reveal">
               <span className="city">Austin</span>
               <span className="status">
                 <span className="led" />
-                SOON
+                LIVE
+              </span>
+              <span className="lead">
+                Meet your lead ·{' '}
+                <a
+                  href="https://www.linkedin.com/in/arjunhegde1/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Arjun
+                </a>
               </span>
             </div>
             <div className="chip is-soon reveal">
