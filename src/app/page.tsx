@@ -333,6 +333,13 @@ export default function Home() {
                 SOON
               </span>
             </div>
+            <div className="chip is-soon reveal">
+              <span className="city">Washington DC</span>
+              <span className="status">
+                <span className="led" />
+                SOON
+              </span>
+            </div>
           </div>
 
           <p className="group-label reveal" style={{ marginTop: '52px' }}>
