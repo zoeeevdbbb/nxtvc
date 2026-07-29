@@ -188,13 +188,29 @@ export default function Home() {
                 LIVE
               </span>
               <span className="lead">
-                Meet your lead ·{' '}
+                Meet your leads ·{' '}
                 <a
                   href="https://www.linkedin.com/in/daisysg/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Daisy
+                </a>
+                ,{' '}
+                <a
+                  href="https://www.linkedin.com/in/vishnavi-paruchuri/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Vishnavi
+                </a>
+                , and{' '}
+                <a
+                  href="https://www.linkedin.com/in/tiffanyhuangvc/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tiffany
                 </a>
               </span>
             </div>
@@ -389,7 +405,7 @@ export default function Home() {
           <div className="cta-wm wm wm--light wm--shadow-coral">NXTVC</div>
           <div className="hero-cta" style={{ justifyContent: 'center' }}>
             <a className="btn btn--primary" href={JOIN_URL} target="_blank" rel="noopener noreferrer">
-              <span className="ic blink">▶</span>Request to join
+              <span className="ic">▶</span>Request to join
             </a>
             <a className="btn btn--ghost btn--on-plum" href="#what">
               Learn more
