@@ -221,13 +221,21 @@ export default function Home() {
                 LIVE
               </span>
               <span className="lead">
-                Meet your lead ·{' '}
+                Meet your leads ·{' '}
                 <a
                   href="https://www.linkedin.com/in/chase-seklar/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Chase
+                </a>
+                , and{' '}
+                <a
+                  href="https://www.linkedin.com/in/taranikkhoo/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tara
                 </a>
               </span>
             </div>
