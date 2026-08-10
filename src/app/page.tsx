@@ -179,6 +179,14 @@ export default function Home() {
                 >
                   Zoe
                 </a>
+                ,{' '}
+                <a
+                  href="https://www.linkedin.com/in/ishakenkare/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Isha
+                </a>
                 , and{' '}
                 <a
                   href="https://www.linkedin.com/in/bridget-duru/"
