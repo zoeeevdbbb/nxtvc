@@ -187,13 +187,21 @@ export default function Home() {
                 >
                   Isha
                 </a>
-                , and{' '}
+                ,{' '}
                 <a
                   href="https://www.linkedin.com/in/bridget-duru/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Bridget
+                </a>
+                , and{' '}
+                <a
+                  href="https://www.linkedin.com/in/isabeltyoung/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Isabel
                 </a>
               </span>
             </div>
