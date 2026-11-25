@@ -452,14 +452,35 @@ export default function Home() {
           </p>
           <div className="chip-grid reveal" style={{ marginTop: '18px' }}>
             <div className="chip is-soon">
-              <span className="city">Dual-Use &amp; DefenseTech</span>
+              <span className="city">Consumer</span>
               <span className="status">
                 <span className="led" />
                 SOON
               </span>
             </div>
             <div className="chip is-soon">
-              <span className="city">ConsumerTech</span>
+              <span className="city">Industrials + Mobility + Supply Chain</span>
+              <span className="status">
+                <span className="led" />
+                SOON
+              </span>
+            </div>
+            <div className="chip is-soon">
+              <span className="city">DeepTech</span>
+              <span className="status">
+                <span className="led" />
+                SOON
+              </span>
+            </div>
+            <div className="chip is-soon">
+              <span className="city">Fintech + InsurTech + Crypto</span>
+              <span className="status">
+                <span className="led" />
+                SOON
+              </span>
+            </div>
+            <div className="chip is-soon">
+              <span className="city">Cyber Security</span>
               <span className="status">
                 <span className="led" />
                 SOON
@@ -473,35 +494,21 @@ export default function Home() {
               </span>
             </div>
             <div className="chip is-soon">
-              <span className="city">FinTech</span>
+              <span className="city">Future of Work + EdTech</span>
               <span className="status">
                 <span className="led" />
                 SOON
               </span>
             </div>
             <div className="chip is-soon">
-              <span className="city">AI Infrastructure</span>
+              <span className="city">BioTech</span>
               <span className="status">
                 <span className="led" />
                 SOON
               </span>
             </div>
             <div className="chip is-soon">
-              <span className="city">Dev Tools</span>
-              <span className="status">
-                <span className="led" />
-                SOON
-              </span>
-            </div>
-            <div className="chip is-soon">
-              <span className="city">Cybersecurity</span>
-              <span className="status">
-                <span className="led" />
-                SOON
-              </span>
-            </div>
-            <div className="chip is-soon">
-              <span className="city">Robotics</span>
+              <span className="city">B2B</span>
               <span className="status">
                 <span className="led" />
                 SOON
