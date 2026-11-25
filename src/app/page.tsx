@@ -228,13 +228,21 @@ export default function Home() {
                 >
                   Vishnavi
                 </a>
-                , and{' '}
+                ,{' '}
                 <a
                   href="https://www.linkedin.com/in/tiffanyhuangvc/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Tiffany
+                </a>
+                , and{' '}
+                <a
+                  href="https://www.linkedin.com/in/michaelloginoff/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Michael
                 </a>
               </span>
             </div>
@@ -253,7 +261,7 @@ export default function Home() {
                 >
                   Chase
                 </a>
-                , and{' '}
+                {' '}and{' '}
                 <a
                   href="https://www.linkedin.com/in/taranikkhoo/"
                   target="_blank"
@@ -286,13 +294,21 @@ export default function Home() {
                 >
                   Jack
                 </a>
-                , and{' '}
+                ,{' '}
                 <a
                   href="https://www.linkedin.com/in/tyler-fohrman?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Tyler
+                </a>
+                , and{' '}
+                <a
+                  href="https://www.linkedin.com/in/aashka-dave/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Aashka
                 </a>
               </span>
             </div>
@@ -303,13 +319,21 @@ export default function Home() {
                 LIVE
               </span>
               <span className="lead">
-                Meet your lead ·{' '}
+                Meet your leads ·{' '}
                 <a
                   href="https://www.linkedin.com/in/peri-ehlman-b02b00143/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Peri
+                </a>
+                {' '}and{' '}
+                <a
+                  href="https://www.linkedin.com/in/wyntonbastian/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Wynton
                 </a>
               </span>
             </div>
@@ -327,11 +351,21 @@ export default function Home() {
                 SOON
               </span>
             </div>
-            <div className="chip is-soon reveal">
+            <div className="chip is-live reveal">
               <span className="city">Salt Lake City</span>
               <span className="status">
                 <span className="led" />
-                SOON
+                LIVE
+              </span>
+              <span className="lead">
+                Meet your lead ·{' '}
+                <a
+                  href="https://www.linkedin.com/in/calogio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Giovanni
+                </a>
               </span>
             </div>
             <div className="chip is-soon reveal">
@@ -365,11 +399,71 @@ export default function Home() {
                 SOON
               </span>
             </div>
-            <div className="chip is-soon reveal">
+            <div className="chip is-live reveal">
               <span className="city">Washington DC</span>
               <span className="status">
                 <span className="led" />
-                SOON
+                LIVE
+              </span>
+              <span className="lead">
+                Meet your leads ·{' '}
+                <a
+                  href="https://www.linkedin.com/in/rajiv-mehta-/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Rajiv
+                </a>
+                {' '}and{' '}
+                <a
+                  href="https://www.linkedin.com/in/oluseyiyoloye/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tami
+                </a>
+              </span>
+            </div>
+            <div className="chip is-live reveal">
+              <span className="city">Philadelphia</span>
+              <span className="status">
+                <span className="led" />
+                LIVE
+              </span>
+              <span className="lead">
+                Meet your leads ·{' '}
+                <a
+                  href="https://www.linkedin.com/in/lucafimmano/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Luca
+                </a>
+                {' '}and{' '}
+                <a
+                  href="https://www.linkedin.com/in/saminabil/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Sami
+                </a>
+              </span>
+            </div>
+            <div className="chip is-live reveal">
+              <span className="city">Denver</span>
+              <span className="status">
+                <span className="led" />
+                LIVE
+              </span>
+              <span className="lead">
+                Meet your lead ·{' '}
+                <a
+                  href="https://www.linkedin.com/in/brianlitvak/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Brian
+                </a>
               </span>
             </div>
           </div>
