@@ -344,13 +344,6 @@ export default function Home() {
                 SOON
               </span>
             </div>
-            <div className="chip is-soon reveal">
-              <span className="city">Nashville</span>
-              <span className="status">
-                <span className="led" />
-                SOON
-              </span>
-            </div>
             <div className="chip is-live reveal">
               <span className="city">Salt Lake City</span>
               <span className="status">
@@ -368,13 +361,6 @@ export default function Home() {
                 </a>
               </span>
             </div>
-            <div className="chip is-soon reveal">
-              <span className="city">Toronto</span>
-              <span className="status">
-                <span className="led" />
-                SOON
-              </span>
-            </div>
             <div className="chip is-live reveal">
               <span className="city">Austin</span>
               <span className="status">
@@ -390,13 +376,6 @@ export default function Home() {
                 >
                   Arjun
                 </a>
-              </span>
-            </div>
-            <div className="chip is-soon reveal">
-              <span className="city">Seattle</span>
-              <span className="status">
-                <span className="led" />
-                SOON
               </span>
             </div>
             <div className="chip is-live reveal">
